@@ -176,3 +176,48 @@ select {
 .bottom {
     padding-top: 18px;
 }
+
+@media (min-width: 280px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .card {
+        width: auto;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 600px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .card {
+        width: 436px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1020px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .card {
+        width: 436px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+}
