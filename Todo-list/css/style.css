@@ -55,3 +55,37 @@ label {
     padding: 20px;
     cursor: pointer;
 }
+
+#input {
+    width: 90%;
+    resize: none;
+    outline: none;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-color: #bfbfbf;
+}
+#input:is(:focus, :valid) {
+    border-width: 2px;
+    border-color: #4671EA;
+}
+#input::-webkit-scrollbar {
+    width: 0px;
+}
+
+@media (max-width: 600px) {
+    .col {
+        width: 100%;
+    }
+    label {
+        font-size: 18px;
+        font-weight: 800;
+    }
+    .box1 h3 {
+        font-size: 18px;
+        font-weight: 800;
+    }
+    #form button {
+        font-size: 18px;
+    }
+}

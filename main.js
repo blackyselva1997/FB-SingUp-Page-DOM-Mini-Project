@@ -1,23 +1,19 @@
-let submit = document.querySelector("#submit");
 let form = document.querySelector("#form");
 
-form.addEventListener('submit', storeData);
-function storeData(e) {
+form.addEventListener('submit', retriveData);
+
+function retriveData(e) {
     e.preventDefault();
-    console.log("clicked");
-    let phNum = document.querySelector("#phNum").value;
-    let password = document.querySelector("#pass").value;
-    let fName = document.querySelector("#fName").value;
-    let lName = document.querySelector("#lName").value;
 
-    localStorage.setItem('phNumber', phNum);
-    localStorage.setItem('Password', password);
-    localStorage.setItem('first Name', fName);
-    localStorage.setItem('Surname', lName);
+    let phNum1 = document.querySelector("#phNum").value;
+    let password1 = document.querySelector("#pass").value;
 
-    if (phNum && password && fName && lName) {
-        location.href = "New folder/success.html"
+    let getPhNumber = localStorage.getItem('phNumber');
+    let Password = localStorage.getItem('Password');
+
+    if (phNum1 == getPhNumber && password1 == Password) {
+        location.href = "./Todo-list/index.html";
     } else {
-        alert("Fill All input");
+        alert("incorrect");
     }
 }
